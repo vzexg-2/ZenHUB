@@ -786,8 +786,7 @@ KillingCheats:CreateTextbox("Check Key", function(value)
  -- ZenHUB [[ Line Adder ]]
 -- ZenHUB [[ Line Adder ]]
 -- ZenHUB [[ Line Adder ]]
- 
-if value == "ZenHUB.Evade" then
+--[[ LoL ZenHUb 101010101010101010101010101010101010101010101 ]] if value == "ZenHUB.Evade" then
 -- ZenHUB [[ Line Adder ]]
 -- ZenHUB [[ Line Adder ]]
 -- ZenHUB [[ Line Adder ]]
@@ -902,7 +901,7 @@ if value == "ZenHUB.Evade" then
  
 wait(5)
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
-local PhantomForcesWindow = Library:NewWindow("Zen Hub - Evade v1.3")
+local PhantomForcesWindow = Library:NewWindow("Zen Hub - v1.3")
 local KillingCheats = PhantomForcesWindow:NewSection("Player")
 getgenv().Revive = false
 -- ZenHUB [[ Line Adder ]]
@@ -1024,6 +1023,63 @@ getgenv().Revive = false
 -- ZenHUB [[ Line Adder ]]
 KillingCheats:CreateToggle("AutoRespawn", function(value)
 getgenv().Revive = value
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+ -- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
+-- ZenHUB [[ Line Adder ]]
  
 if getgenv().Revive == true then
 while getgenv().Revive == true do
@@ -1182,7 +1238,7 @@ end)
  
 getgenv().God = false
  
-KillingCheats:CreateToggle("God Mode [BETA]", function(value)
+KillingCheats:CreateToggle("God Mode [Beta]", function(value)
 getgenv().God = value
  
 if getgenv().God == true then
@@ -1225,7 +1281,7 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 end)
  
-local KillingCheats = PhantomForcesWindow:NewSection("Evade v1.3")
+local KillingCheats = PhantomForcesWindow:NewSection("Evade v1.3 | NEW")
 end
 end)
  
