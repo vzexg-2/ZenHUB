@@ -1254,8 +1254,9 @@ game.Players.LocalPlayer.Character.Humanoid.Health = value
 wait()
 end)
 -- Speed Function [BETA]
-KillingCheats:CreateTextBox("Custom Speed", function(value)
+KillingCheats:CreateTextbox("Custom Speed", function(value)
 game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = value
+wait()
 end)
    
 local KillingCheats = PhantomForcesWindow:NewSection("AutoFarms")
