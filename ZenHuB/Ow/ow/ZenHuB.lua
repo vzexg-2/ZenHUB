@@ -1249,18 +1249,20 @@ end
 end
 end)
  
- 
 KillingCheats:CreateTextbox("Custom Health", function(value)
 game.Players.LocalPlayer.Character.Humanoid.Health = value
 wait()
 end)
- 
+-- Speed Function [BETA]
+KillingCheats:CreateTextBox("Custom Speed", function(value)
+game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+   
 local KillingCheats = PhantomForcesWindow:NewSection("AutoFarms")
- 
 getgenv().Autofarm = false
  
 KillingCheats:CreateToggle("AutoFarm", function(value)
-        getgenv().Autofarm = value
+getgenv().Autofarm = value
  
 if getgenv().Autofarm == true then
 while getgenv().Autofarm == true do
