@@ -1264,6 +1264,12 @@ local ESPEnabled = false
 
 KillingCheats:CreateToggle("ESP", function(value)
     ESPEnabled = value
+    if not value then
+        for _, Line in pairs(Lines) do
+            Line:Destroy()
+        end
+        Lines = {}
+    end
 end)
 
 local TargetPartName = "HumanoidRootPart"
