@@ -1303,7 +1303,14 @@ function Setline(Line, Width, Color, Origin, Destination)
 end
 
 game:GetService("RunService").RenderStepped:Connect(function()
-    if not ESPEnabled then return end
+    if not ESPEnabled then 
+        for _, Line in pairs(Lines) do
+            Line:Destroy()
+        end
+        Lines = {}
+        return 
+    end
+    
     local Targets = {}
     for i, Player in pairs(game.Players:GetPlayers()) do
         if Player == game.Players.LocalPlayer then continue end
@@ -1318,6 +1325,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
             table.insert(Targets, {Vector2.new(ScreenPoint.X, ScreenPoint.Y), IsTeammate and TeammateLineColor or LineColor})
         end
     end
+    
     if FindHumanoids then
         for _, Obj in pairs(workspace:GetDescendants()) do
             if Obj.ClassName ~= "Humanoid" then continue end
@@ -1330,19 +1338,23 @@ game:GetService("RunService").RenderStepped:Connect(function()
             end
         end
     end
-    if #Targets > #Lines then
-        local NewLine = Instance.new("Frame")
-        NewLine.Name = "Snapline"
-        NewLine.AnchorPoint = Vector2.new(.5, .5)
-        NewLine.Parent = Gui
-        table.insert(Lines, NewLine)
-    end
+    
     for i, Line in pairs(Lines) do
         local TargetData = Targets[i]
         if not TargetData then
             Line:Destroy()
             table.remove(Lines, i)
-            continue
+        end
+    end
+    
+    for i, TargetData in ipairs(Targets) do
+        local Line = Lines[i]
+        if not Line then
+            Line = Instance.new("Frame")
+            Line.Name = "Snapline"
+            Line.AnchorPoint = Vector2.new(.5, .5)
+            Line.Parent = Gui
+            table.insert(Lines, Line)
         end
         Setline(Line, LineWidth, TargetData[2], LineOrigin, TargetData[1])
     end
