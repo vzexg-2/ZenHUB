@@ -1,6 +1,39 @@
 --[[ LOCAL LIBRARY -- MADE WITH LOVE AND CARE.
 ]]
 
+-- Notification Warning
+local NotificationGui = Instance.new("ScreenGui")
+NotificationGui.Name = "NotificationGui"
+NotificationGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local NotificationFrame = Instance.new("Frame")
+NotificationFrame.Name = "NotificationFrame"
+NotificationFrame.Size = UDim2.new(0.3, 0, 0.1, 0)
+NotificationFrame.Position = UDim2.new(0.5, 0, 0.9, 0)
+NotificationFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotificationFrame.BorderSizePixel = 0
+NotificationFrame.Parent = NotificationGui
+
+local NotificationText = Instance.new("TextLabel")
+NotificationText.Name = "NotificationText"
+NotificationText.Size = UDim2.new(1, 0, 1, 0)
+NotificationText.Position = UDim2.new(0, 0, 0, 0)
+NotificationText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotificationText.BackgroundTransparency = 1
+NotificationText.Font = Enum.Font.SourceSans
+NotificationText.TextColor3 = Color3.fromRGB(0, 0, 0)
+NotificationText.TextSize = 20
+NotificationText.TextWrapped = true
+NotificationText.Text = ""
+NotificationText.Parent = NotificationFrame
+
+local function displayNotification(message)
+    NotificationText.Text = message
+    wait(3)
+    NotificationText.Text = ""
+end
+displayNotification("God Mode only works if you got shot by a military or an impostor")
+
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local PhantomForcesWindow = Library:NewWindow("Zen Hub -- Key System")
 local KillingCheats = PhantomForcesWindow:NewSection("Fast Key")
@@ -1280,8 +1313,17 @@ local args = {
     [1] = value.."",
     [2] = "All"
 }
- 
+
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+
+KillingCheats:CreateTextbox("Custom Spam Message", function(value)
+    getgenv().spamChat = function(value)
+        while true do
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(value, "All")
+            wait(0.5)
+        end
+    end
 end)
  
 local KillingCheats = PhantomForcesWindow:NewSection("Evade v1.3 | NEW")
