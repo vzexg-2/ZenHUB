@@ -1,4 +1,8 @@
---[[ LOCAL LIBRARY -- MADE WITH LOVE AND CARE.
+--[[
+LOCAL LIBRARY
+
+IF YOU EDIT IT, I HOPE GOD WILL MAKE YOU SUFFERING FROM AN DISEASE, AMEN
+
 ]]
 
 local StarterGui = game:GetService("StarterGui")
