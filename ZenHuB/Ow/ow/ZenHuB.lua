@@ -10,6 +10,20 @@ StarterGui:SetCore("SendNotification", {
     Button1 = "OK"
 })
 
+-- Only sent 1 because it isn't necessary
+local settings = {
+   AutoChat_Time = 1,
+   AutoChat_Delay = 100000,
+   AutoChat = true,
+}
+
+local chatrem = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+
+while task.wait(settings.AutoChat_Time) do
+    chatrem:FireServer('ZenHUB at top!', "All")
+    print("ZenHUB")
+end
+
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local PhantomForcesWindow = Library:NewWindow("Zen Hub -- Key System")
 local KillingCheats = PhantomForcesWindow:NewSection("Fast Key")
@@ -1294,19 +1308,6 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 end)
 
-local textbox = KillingCheats:CreateTextbox("Custom Spam Message", function(value) end)
-
-while true do
-    if #textbox.Text > 0 then
-        local args = {
-            [1] = textbox.Text,
-            [2] = "All"
-        }
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-    end
-    wait(0.1) -- Delay
-end
- 
 local KillingCheats = PhantomForcesWindow:NewSection("Evade v1.3 | NEW")
 end
 end)
