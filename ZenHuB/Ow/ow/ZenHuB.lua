@@ -1267,12 +1267,11 @@ KillingCheats:CreateToggle("ESP", function(value)
 end)
 
 local TargetPartName = "HumanoidRootPart"
-local BoxColor = Color3.new(0, 1, 0) -- Green color for the box
-local BoxTransparency = 0.5
+local GenericHumanoidTargetPartName = TargetPartName    
 local LineColor = Color3.new(255, 255, 255)
 local TeammateLineColor = Color3.new(0, 0.25, 1)
 local GenericHumanoidLineColor = Color3.new(1, 0, 0)
-local LineWidth = 1 -- Thin line
+local LineWidth = 1 -- Adjusted to be thinner
 local DrawTeammates = true
 local FindHumanoids = true
 local GetLineOrigin = function(Camera)
@@ -1283,10 +1282,9 @@ local Camera = workspace.CurrentCamera
 local LineOrigin = GetLineOrigin(Camera)
 
 local Gui = Instance.new("ScreenGui")
-Gui.Name = "ESP Gui"
+Gui.Name = "SnaplineGui"
 Gui.Parent = game.Players.LocalPlayer.PlayerGui
 local Lines = {}
-local Boxes = {}
 
 function Setline(Line, Width, Color, Origin, Destination)
     local Position = (Origin + Destination) / 2
@@ -1313,22 +1311,18 @@ game:GetService("RunService").RenderStepped:Connect(function()
         if OnScreen then
             table.insert(Targets, {Vector2.new(ScreenPoint.X, ScreenPoint.Y), IsTeammate and TeammateLineColor or LineColor})
         end
-        -- Thin Box around player
-        if Boxes[i] then
-            Boxes[i]:Destroy()
-            Boxes[i] = nil
+    end
+    if FindHumanoids then
+        for _, Obj in pairs(workspace:GetDescendants()) do
+            if Obj.ClassName ~= "Humanoid" then continue end
+            if game.Players:FindFirstChild(Obj.Parent.Name) then continue end
+            local TargetPart = Obj.Parent:FindFirstChild(TargetPartName)
+            if not TargetPart then continue end
+            local ScreenPoint, OnScreen = Camera:WorldToScreenPoint(TargetPart.Position)
+            if OnScreen then
+                table.insert(Targets, {Vector2.new(ScreenPoint.X, ScreenPoint.Y), GenericHumanoidLineColor})
+            end
         end
-        local Box = Instance.new("Frame")
-        Box.Name = "Box"
-        Box.AnchorPoint = Vector2.new(0.5, 1)
-        Box.Size = UDim2.new(0, 50, 0, 100)
-        Box.Position = UDim2.new(0, ScreenPoint.X, 0, ScreenPoint.Y)
-        Box.BackgroundColor3 = BoxColor
-        Box.BorderColor3 = BoxColor
-        Box.BorderSizePixel = 1
-        Box.BackgroundTransparency = BoxTransparency
-        Box.Parent = Gui
-        Boxes[i] = Box
     end
     if #Targets > #Lines then
         local NewLine = Instance.new("Frame")
