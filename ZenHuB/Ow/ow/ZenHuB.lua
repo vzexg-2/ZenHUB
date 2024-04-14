@@ -1294,14 +1294,16 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 end)
 
-KillingCheats:CreateTextbox("Custom Spam Message", function(value)
-    getgenv().spamChat = function(value)
-        while true do
-            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(value, "All")
-            wait(0.5)
-        end
-    end
-end)
+KillingCheats:CreateTextbox("Custom Spam Message", function(value) end)
+
+while true do
+    local args = {
+        [1] = value.."",
+        [2] = "All"
+    }
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+    wait(0.1)
+end
  
 local KillingCheats = PhantomForcesWindow:NewSection("Evade v1.3 | NEW")
 end
