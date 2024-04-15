@@ -1,5 +1,8 @@
 --[[
-Made with love, Sunshine
+LOCAL LIBRARY
+
+IF YOU EDIT IT, I HOPE GOD WILL MAKE YOU SUFFERING FROM AN DISEASE, AMEN
+
 ]]
 
 local StarterGui = game:GetService("StarterGui")
@@ -53,18 +56,18 @@ end
 end
 end)
 getgenv().God = false
-
+ 
 KillingCheats:CreateToggle("God Mode [Beta]", function(value)
-    getgenv().God = value
-
-    if getgenv().God == true then
-        while getgenv().God == true do
-            wait()
-            game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 100
-        end
-    end
+getgenv().God = value
+ 
+if getgenv().God == true then
+while getgenv().God == true do
+wait()
+game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 100
+end
+end
 end)
-    
+
 local ESPEnabled = false
 
 KillingCheats:CreateToggle("ESP", function(value)
@@ -170,9 +173,9 @@ game.Players.LocalPlayer.Character.Humanoid.Health = value
 wait()
 end)
 -- Speed Function [BETA]
-KillingCheats:CreateTextbox("Custom Speed [Beta]", function(Value)
-    game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = Value
-    Settings.Speed = Value
+KillingCheats:CreateTextbox("Custom Speed [Beta]", function(value)
+    game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = value
+    Settings.Speed = value
 wait()
 end)
    
@@ -190,17 +193,17 @@ end
 end
 end)
 
-KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
-    StarterGui:SetCore("SendNotification", {
-        Title = "ZenHUB",
-        Text = "Better view with close distance from the map.",
-        Duration = 5,
-        Button1 = "Continue"
-    })
-    if getgenv().Autofarm == true do
-        while getgenv().Autofarm do
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(100, 5000, 400)
-            game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 100
+KillingCheats: CreateToggle("Auto Farm 2.0", function(value)
+StarterGui:SetCore("SendNotification", {
+    Title = "ZenHUB",
+    Text = "AutoFarm 2.0, Better view of the map",
+    Duration = 100,
+    Button1 = "Ok"
+})
+    if getgenv().Autofarm == true then
+        while getgenv().Autofarm == true do
+            wait()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, 900, 400)
         end
     end
 end)
@@ -244,9 +247,8 @@ getgenv().key = value
  
  
 if getgenv().key == true then
-    setclipboard("ZenHUB at top!")
-    setclipboard("https://mboost.me/a/car")
-    end
+setclipboard("https://mboost.me/a/car")
+end
 end)
  
 --getgenv().Enjoy! == true
