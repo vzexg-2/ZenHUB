@@ -55,21 +55,20 @@ end)
 getgenv().God = false
 
 KillingCheats:CreateToggle("God Mode [Beta]", function(value)
-getgenv().God = value
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-local Humanoid = Character:WaitForChild("Humanoid")
+    getgenv().God = value
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+    local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+    local Humanoid = Character:WaitForChild("Humanoid")
 
--- Function to check and set health
-local function Health()
-    if Humanoid.Health < 100 then
-        Humanoid.Health = 100
+    local function Health()
+        if Humanoid.Health < 100 then
+            Humanoid.Health = 100
+        end
     end
-end
 
-if getgenv().God == true do
-    while getgenv().God == true do
+    if getgenv().God == true then
+        while getgenv().God == true do
             Health()
             wait(1)
         end
