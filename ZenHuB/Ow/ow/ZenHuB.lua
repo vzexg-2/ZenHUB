@@ -210,12 +210,22 @@ KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
 end)
 
 local KillingCheats = PhantomForcesWindow:NewSection("Game Option")
+getgenv().NV = false
 
 KillingCheats:CreateToggle("Night Vision", function(value)
-    Game.Lighting.Brightness = 3
-    Game.Lighting.FogEnd = 100000
-    Game.Lighting.GlobalShadows = false
-    Game.Lighting.ClockTime = 12
+    getgenv().NV = value
+
+    if getgenv().NV == true then
+        Game.Lighting.Brightness = 3
+        Game.Lighting.FogEnd = 100000
+        Game.Lighting.GlobalShadows = false
+        Game.Lighting.ClockTime = 12
+    else
+        if getgenv().NV == false then
+            Game.Lighting.GlobalShadows = true
+            Game.Lighting.Brightness = 1
+        end
+    end
 end)
 
 KillingCheats:CreateToggle("Fast Revive", false, function(State)
