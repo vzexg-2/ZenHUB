@@ -61,6 +61,27 @@ if getgenv().God == true then
 while getgenv().God == true do
 wait()
 game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 100
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local function setHealthTo100()
+    local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+    local Humanoid = Character:WaitForChild("Humanoid")
+    local healthAttribute = Humanoid:FindFirstChild("Health")
+
+    if healthAttribute then
+        healthAttribute.Value = math.max(healthAttribute.Value, 100)
+    else
+        local newHealth = Instance.new("NumberValue")
+        newHealth.Name = "Health"
+        newHealth.Value = 100
+        newHealth.Parent = Humanoid
+    end
+end
+
+while true do
+    setHealthTo100()
+    wait(1)
+end
 end
 end
 end)
@@ -215,6 +236,7 @@ KillingCheats:CreateToggle("AutoFarm 2.0", function(value)
     getgenv().Autofarm = value
 
     if getgenv().Autofarm == true then
+        while getgenv().Autofarm == true do
         AutoFarm()
     end
 end)
