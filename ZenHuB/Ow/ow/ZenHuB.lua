@@ -1,8 +1,5 @@
 --[[
-LOCAL LIBRARY
-
-IF YOU EDIT IT, I HOPE GOD WILL MAKE YOU SUFFERING FROM AN DISEASE, AMEN
-
+Made with love, Sunshine
 ]]
 
 local StarterGui = game:GetService("StarterGui")
@@ -205,7 +202,7 @@ KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
     
     while getgenv().Autofarm do
         wait()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, 900, 400)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, 200, 300)
     end
 end)
 
