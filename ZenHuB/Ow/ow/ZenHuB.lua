@@ -56,25 +56,15 @@ getgenv().God = false
 
 KillingCheats:CreateToggle("God Mode [Beta]", function(value)
     getgenv().God = value
-    local Players = game:GetService("Players")
-    local LocalPlayer = Players.LocalPlayer
-    local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-    local Humanoid = Character:WaitForChild("Humanoid")
-
-    local function Health()
-        if Humanoid.Health < 100 then
-            Humanoid.Health = 100
-        end
-    end
 
     if getgenv().God == true then
         while getgenv().God == true do
-            Health()
-            wait(1)
+            wait()
+            game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 100
         end
     end
 end)
-
+    
 local ESPEnabled = false
 
 KillingCheats:CreateToggle("ESP", function(value)
@@ -180,9 +170,9 @@ game.Players.LocalPlayer.Character.Humanoid.Health = value
 wait()
 end)
 -- Speed Function [BETA]
-KillingCheats:CreateTextbox("Custom Speed [Beta]", function(value)
-    game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = value
-    Settings.Speed = value
+KillingCheats:CreateTextbox("Custom Speed [Beta]", function(Value)
+    game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    Settings.Speed = Value
 wait()
 end)
    
@@ -200,33 +190,18 @@ end
 end
 end)
 
-local function AutoFarm()
+KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
     StarterGui:SetCore("SendNotification", {
         Title = "ZenHUB",
         Text = "Better view with close distance from the map.",
         Duration = 5,
         Button1 = "Continue"
     })
-    while getgenv().Autofarm do
-        wait()
-        if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(100, 1300, 400) -- X Y Z
-            
-            for _, resource in ipairs(workspace.Resources:GetChildren()) do
-                if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - resource.Position).magnitude < 10 then
-                    resource:Click()
-                end
-            end
+    if getgenv().Autofarm == true do
+        while getgenv().Autofarm do
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(100, 5000, 400)
+            game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 100
         end
-    end
-end
-
-KillingCheats:CreateToggle("AutoFarm 2.0", function(value)
-    getgenv().Autofarm = value
-
-    if getgenv().Autofarm == true then
-        while getgenv().Autofarm == true do
-        AutoFarm()
     end
 end)
 
