@@ -193,18 +193,19 @@ end
 end
 end)
 
-KillingCheats: CreateToggle("Auto Farm 2.0", function(value)
-StarterGui:SetCore("SendNotification", {
-    Title = "ZenHUB",
-    Text = "AutoFarm 2.0, Better view of the map",
-    Duration = 100,
-    Button1 = "Ok"
-})
-    if getgenv().Autofarm == true then
-        while getgenv().Autofarm == true do
-            wait()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, 900, 400)
-        end
+KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
+    StarterGui:SetCore("SendNotification", {
+        Title = "ZenHUB",
+        Text = "AutoFarm 2.0, Better view of the map",
+        Duration = 100,
+        Button1 = "Ok"
+    })
+    
+    getgenv().Autofarm = value
+    
+    while getgenv().Autofarm do
+        wait()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, 900, 400)
     end
 end)
 
