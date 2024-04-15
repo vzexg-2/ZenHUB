@@ -252,16 +252,16 @@ setclipboard("https://mboost.me/a/car")
 end
 end)
 
-Library:NewWindow("ZenHUB Credit")
-local KillingCheats = PhantomForcesWindow:NewSection("Credit")
+local Create = Library:NewWindow("ZenHUB Credit")
+local KillingCheats = Create:NewSection("Credit")
 end
 end)
 
-local KillingCheats = PhantomForcesWindow:NewSection("Sunshine")
+local KillingCheats = Create:NewSection("Sunshine")
 end
 end)
 
-local KillingCheats = PhantomForcesWindow:NewSecton("Ardo")
+local KillingCheats = Create:NewSecton("Ardo")
 end
 end)
 --getgenv().Enjoy! == true
