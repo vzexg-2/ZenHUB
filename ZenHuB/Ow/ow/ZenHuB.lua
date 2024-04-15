@@ -53,39 +53,37 @@ end
 end
 end)
 getgenv().God = false
- 
+
 KillingCheats:CreateToggle("God Mode [Beta]", function(value)
-getgenv().God = value
- 
-if getgenv().God == true then
-while getgenv().God == true do
-wait()
-game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 100
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-local function setHealthTo100()
-    local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-    local Humanoid = Character:WaitForChild("Humanoid")
-    local healthAttribute = Humanoid:FindFirstChild("Health")
+    getgenv().God = value
+    
+    if value then
+        local Players = game:GetService("Players")
+        local LocalPlayer = Players.LocalPlayer
+        local function setHealthTo100()
+            local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+            local Humanoid = Character:WaitForChild("Humanoid")
+            local healthAttribute = Humanoid:FindFirstChild("Health")
 
-    if healthAttribute then
-        healthAttribute.Value = math.max(healthAttribute.Value, 100)
-    else
-        local newHealth = Instance.new("NumberValue")
-        newHealth.Name = "Health"
-        newHealth.Value = 100
-        newHealth.Parent = Humanoid
+            if healthAttribute then
+                healthAttribute.Value = math.max(healthAttribute.Value, 100)
+            else
+                local newHealth = Instance.new("NumberValue")
+                newHealth.Name = "Health"
+                newHealth.Value = 100
+                newHealth.Parent = Humanoid
+            end
+        end
+
+        if getgenv().God == true do
+            while getgenv().God == true do
+                 setHealthTo100()
+                 wait(1)
+            end
+        end
     end
-end
-
-while true do
-    setHealthTo100()
-    wait(1)
-end
-end
-end
 end)
-
+                        
 local ESPEnabled = false
 
 KillingCheats:CreateToggle("ESP", function(value)
