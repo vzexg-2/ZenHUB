@@ -191,10 +191,16 @@ end
 end)
 
 local function AutoFarm()
+    StarterGui:SetCore("SendNotification", {
+        Title = "ZenHUB",
+        Text = "Better view with close distance from the map.",
+        Duration = 5,
+        Button1 = "Continue"
+    })
     while getgenv().Autofarm do
         wait()
         if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(100, 5000, 400) -- X Y Z
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(100, 1300, 400) -- X Y Z
             
             for _, resource in ipairs(workspace.Resources:GetChildren()) do
                 if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - resource.Position).magnitude < 10 then
@@ -252,8 +258,9 @@ getgenv().key = value
  
  
 if getgenv().key == true then
-setclipboard("https://mboost.me/a/car")
-end
+    setclipboard("ZenHUB at top!")
+    setclipboard("https://mboost.me/a/car")
+    end
 end)
  
 --getgenv().Enjoy! == true
