@@ -18,7 +18,7 @@ StarterGui:SetCore("SendNotification", {
     Title = "ZenHUB",
     Text = "ESP Only work 1 round only, I haven't fixed it yet.",
     Duration = 10,
-    Button1 = "SIR YES SIR!"
+    Button1 = "Ok"
 })
 
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
@@ -251,17 +251,5 @@ if getgenv().key == true then
 setclipboard("https://mboost.me/a/car")
 end
 end)
-
-local Create = Library:NewWindow("ZenHUB Credit")
-local KillingCheats = Create:NewSection("Credit")
-end
-end)
-
-local KillingCheats = Create:NewSection("Sunshine")
-end
-end)
-
-local KillingCheats = Create:NewSecton("Ardo")
-end
-end)
+ 
 --getgenv().Enjoy! == true
