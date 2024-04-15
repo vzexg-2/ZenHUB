@@ -6,6 +6,7 @@ local StarterGui = game:GetService("StarterGui")
 local WorkspacePlayers = game:GetService("Workspace").Game.Players;
 local Players = game:GetService('Players');
 local localplayer = Players.LocalPlayer;
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 StarterGui:SetCore("SendNotification", {
     Title = "ZenHUB",
@@ -200,6 +201,7 @@ KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
         Duration = 100,
         Button1 = "Ok"
     })
+    game.ReplicatedStorage.CustomMessageEvent:FireServer("Passing through the limitations of earthly heaven and hell for the worldly and hell for them, Teleport into the air, O living being! Be the one that watch them dying slowly as the time moving at it speed.")
     
     getgenv().Autofarm = value
     
