@@ -205,7 +205,7 @@ KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
     
     while getgenv().Autofarm do
         wait()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, 200, 300)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, 500, 300)
     end
 end)
 
