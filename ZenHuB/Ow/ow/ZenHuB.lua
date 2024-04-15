@@ -251,5 +251,17 @@ if getgenv().key == true then
 setclipboard("https://mboost.me/a/car")
 end
 end)
- 
+
+Library:NewWindow("ZenHUB Credit")
+local KillingCheats = PhantomForcesWindow:NewSection("Credit")
+end
+end)
+
+local KillingCheats = PhantomForcesWindow:NewSection("Sunshine")
+end
+end)
+
+local KillingCheats = PhantomForcesWindow:NewSecton("Ardo")
+end
+end)
 --getgenv().Enjoy! == true
