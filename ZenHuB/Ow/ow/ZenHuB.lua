@@ -202,7 +202,7 @@ KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
         Button1 = "Ok"
     })
     local args = {
-        [1] = "Passing through the limitations of earthly heaven and hell for the worldly and hell for them, Teleport into the air, O living being! Be the one that watch them dying slowly as the time moving at it speed.",
+        [1] = "Passing through the limitations of earthly heaven and hell for the worldly and hell for them, Teleport into the air, O living being! Be the one that watches them dying slowly as the time moves at its speed.",
         [2] = "All"
     }
 
