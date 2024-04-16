@@ -201,7 +201,12 @@ KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
         Duration = 100,
         Button1 = "Ok"
     })
-    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Passing through the limitations of earthly heaven and hell for the worldly and hell for them, Teleport into the air, O living being! Be the one that watch them dying slowly as the time moving at it speed.", "All")
+    local args = {
+        [1] = "Passing through the limitations of earthly heaven and hell for the worldly and hell for them, Teleport into the air, O living being! Be the one that watch them dying slowly as the time moving at it speed.",
+        [2] = "All"
+    }
+
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
     getgenv().Autofarm = value
     
     while getgenv().Autofarm do
