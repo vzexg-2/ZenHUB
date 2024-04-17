@@ -209,7 +209,7 @@ KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
     StarterGui:SetCore("SendNotification", {
         Title = "???",
-        Text = " Passing through the limitations of earthly heaven and hell for the worldly and hell for them, Teleport into the air, O living being! Be the one that watches them dying slowly as the time moves at its speed!"
+        Text = " Passing through the limitations of earthly heaven and hell for the worldly and hell for them, Teleport into the air, O living being! Be the one that watches them dying slowly as the time moves at its speed!",
         Duration = 80,
         Button1 = "BOW DOWN AND RESPECT ME, O LIVING CREATURE!"
     })
@@ -241,7 +241,7 @@ KillingCheats:CreateToggle("Night Vision", function(value)
 end)
 
 KillingCheats:CreateToggle("Fast Revive", false, function(State)
-if State then
+  if State then
         workspace.Game.Settings:SetAttribute("ReviveTime", 2.2)
     else
         workspace.Game.Settings:SetAttribute("ReviveTime", Settings.reviveTime)
@@ -267,7 +267,8 @@ KillingCheats:CreateToggle("Copy key link", function(value)
 getgenv().key = value
   
 if getgenv().key == true then
-setclipboard("https://mboost.me/a/car")
+    setclipboard("ZenHUB On Top")
+    setclipboard("https://mboost.me/a/car")
 end
 end)
  
