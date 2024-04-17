@@ -10,7 +10,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 StarterGui:SetCore("SendNotification", {
     Title = "ZenHUB",
-    Text = "God mode only works if you get shot by an impostor or military",
+    Text = "Created by Sunshine, email: sunshinexjuhari@protonmail.com",
     Duration = 10,
     Button1 = "OK"
 })
@@ -249,8 +249,6 @@ KillingCheats:CreateToggle("Fast Revive", false, function(State)
         workspace.Game.Settings:SetAttribute("ReviveTime", Settings.reviveTime)
     end
 end)
-
-
 local KillingCheats = PhantomForcesWindow:NewSection("Others")
  
 KillingCheats:CreateTextbox("Custom Message", function(value)
@@ -269,10 +267,9 @@ end)
 getgenv().key = false
 KillingCheats:CreateToggle("Copy key link", function(value)
 getgenv().key = value
- 
- 
+  
 if getgenv().key == true then
-setclipboard("https://mboost.me/a/car")
+  setclipboard("https://mboost.me/a/car")
 end
 end)
  
