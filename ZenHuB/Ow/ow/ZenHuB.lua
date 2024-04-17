@@ -207,7 +207,7 @@ KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
     }
 
     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-    StarterGui:SetCore("Send notification", {
+    StarterGui:SetCore("SendNotification", {
         Title = "???",
         Text = " Passing through the limitations of earthly heaven and hell for the worldly and hell for them, Teleport into the air, O living being! Be the one that watches them dying slowly as the time moves at its speed!"
         Duration = 80,
