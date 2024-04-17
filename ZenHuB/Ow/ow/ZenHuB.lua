@@ -243,7 +243,7 @@ KillingCheats:CreateToggle("Night Vision", function(value)
 end)
 
 KillingCheats:CreateToggle("Fast Revive", false, function(State)
-if State then
+  if State then
         workspace.Game.Settings:SetAttribute("ReviveTime", 2.2)
     else
         workspace.Game.Settings:SetAttribute("ReviveTime", Settings.reviveTime)
