@@ -218,8 +218,8 @@ KillingCheats:CreateToggle("Auto Farm 2.0", function(value)
     if getgenv().Autofarm == true then
         while getgenv().Autofarm == true do
             wait()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, 500, 300)
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, 500, 300)
+            game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(40, 500, 300)
+            game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Velocity = Vector3.new(0, 0, 0)
         end
     end
 end)
