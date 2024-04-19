@@ -3,9 +3,9 @@
  |_  /___ _ _ / __| ___ __  \ \ / /__ /
   / // -_) ' \\__ \/ -_) _|  \ V / |_ \
  /___\___|_||_|___/\___\__|   \_/ |___/
-
-// Secured by ZenSec v3, Much love, Sunshine!
+    ! Secured By ZenSec ( Alpha v0.3.2 ) Much love, Sunshine
 ]]
+
 
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 function orEUpqvHbPDQmEldTtEBZpNqDnlnZNZVcEakdxayiJ(data) m=string.sub(data, 0, 50) data=data:gsub(m,'')
@@ -17,7 +17,6 @@ local Players = game:GetService(orEUpqvHbPDQmEldTtEBZpNqDnlnZNZVcEakdxayiJ('eiIx
 local localplayer = Players.LocalPlayer;
 local ReplicatedStorage = game:GetService(orEUpqvHbPDQmEldTtEBZpNqDnlnZNZVcEakdxayiJ('EhRekBloezvRfeAsXjFzyxfxcdpBeJqYaRyGutDjrVmGwNTppLUmVwbGljYXRlZFN0b3JhZ2U='))
 
--- Encryption Starts.
 StarterGui:SetCore(orEUpqvHbPDQmEldTtEBZpNqDnlnZNZVcEakdxayiJ('XdjyhbmsAUlAmCQccInDuPVHhCfNuCXlZEzmuWYqxIFqNYxvgHU2VuZE5vdGlmaWNhdGlvbg=='), {
     Title = orEUpqvHbPDQmEldTtEBZpNqDnlnZNZVcEakdxayiJ('axZMSkNsxgkBPcjdsFiIppHQpjWTXvRlZjhhWOnudGcGnXiutLWmVuSFVC'),
     Text = orEUpqvHbPDQmEldTtEBZpNqDnlnZNZVcEakdxayiJ('PsFjMUYHFDFKECQlTLVkfJzsUEJNfRqsnfbsWKLRkrMqUjxVzyQ3JlYXRlZCBieSBTdW5zaGluZSwgZW1haWw6IHN1bnNoaW5leGp1aGFyaUBwcm90b25tYWlsLmNvbQ=='),
