@@ -7,4 +7,266 @@
 
 ]]
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v18,v19) local v20={};for v24=1, #v18 do v6(v20,v0(v4(v1(v2(v18,v24,v24 + 1 )),v1(v2(v19,1 + (v24% #v19) ,1 + (v24% #v19) + 1 )))%256 ));end return v5(v20);end local v8=game:GetService(v7("\226\215\218\55\242\190\213\57\196\202","\126\177\163\187\69\134\219\167"));local v9=game:GetService(v7("\20\194\56\206\239\51\204\41\192","\156\67\173\74\165")).Game.Players;local v10=game:GetService(v7("\4\187\72\15\185\52\85","\38\84\215\41\118\220\70"));local v11=v10.LocalPlayer;local v12=game:GetService(v7("\98\19\50\30\247\83\23\54\23\250\99\2\45\0\255\87\19","\158\48\118\66\114"));v8:SetCore(v7("\152\33\30\50\93\170\239\162\34\25\53\114\177\242\164\42","\155\203\68\112\86\19\197"),{[v7("\114\212\34\240\69","\152\38\189\86\156\32\24\133")]=v7("\198\82\169\110\201\117","\38\156\55\199"),[v7("\156\120\100\60","\35\200\29\28\72\115\20\154")]=v7("\58\173\212\222\153\41\48\89\189\200\159\190\57\58\10\183\216\209\136\96\116\28\178\208\214\129\118\116\10\170\223\204\133\37\58\28\167\219\202\133\45\38\16\159\193\205\130\56\59\23\178\208\214\129\98\55\22\178","\84\121\223\177\191\237\76"),[v7("\159\67\219\161\46\89\63\207","\161\219\54\169\192\90\48\80")]=24 -14 ,[v7("\107\87\20\49\70\76\81","\69\41\34\96")]=v7("\147\232","\75\220\163\183\106\98")});v8:SetCore(v7("\49\191\133\51\247\13\174\130\49\208\1\187\159\62\214\12","\185\98\218\235\87"),{[v7("\255\53\51\234\219","\202\171\92\71\134\190")]=v7("\19\196\34\160\28\227","\232\73\161\76"),[v7("\143\220\90\73","\126\219\185\34\61")]="ESP Only work 1 round only, I haven't fixed it yet.",[v7("\40\219\76\115\106\126\252\233","\135\108\174\62\18\30\23\147")]=7 + 3 ,[v7("\148\252\62\223\23\160\98","\167\214\137\74\171\120\206\83")]=v7("\164\251","\199\235\144\82\61\152")});local v13=loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))();local v14=loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/proc/jans"))();local v15=v13:NewWindow(v7("\61\19\183\107\47\3\187\107\74\91\249\0\2\15\249\24\30\5\173\46\10","\75\103\118\217"));local v16=v15:NewSection(v7("\236\81\105","\126\167\52\16\116\217"));v16:CreateTextbox(v7("\235\38\37\131\191\89\215\205\55","\156\168\78\64\224\212\121"),function(v21) if (v21==v7("\61\235\171\230\50\204\235\235\17\239\161\203","\174\103\142\197")) then wait(855 -(20 + 830) );local v25=loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))();local v26=loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/proc/jans"))();local v27=v25:NewWindow(v7("\108\45\81\120\13\75\250\22\101\31\46\116\16\172","\152\54\72\63\88\69\62"));local v28=v27:NewSection(v7("\228\200\239\69\209\214","\60\180\164\142"));getgenv().Settings={[v7("\107\78\0\44\35","\114\56\62\101\73\71\141")]=2061 -(602 + 9) ,[v7("\146\252\214\212","\164\216\137\187")]=3,[v7("\192\227\39\187\176\251\63\219\235\52","\107\178\134\81\210\198\158")]=3 + 0 };getgenv().Revive=false;v28:CreateToggle(v7("\25\27\150\201\152\61\29\146\199\189\54","\202\88\110\226\166"),function(v52) getgenv().Revive=v52;if (getgenv().Revive==true) then while getgenv().Revive==true  do local v101=126 -(116 + 10) ;while true do if (v101==(0 + 0)) then wait();game:GetService(v7("\241\10\146\251\195\192\14\150\242\206\240\27\141\229\203\196\10","\170\163\111\226\151")).Events.Respawn:FireServer();break;end end end end end);getgenv().God=false;local function v32(v54) if (getgenv().God==true) then while getgenv().God==true  do game:GetService(v7("\33\60\179\33\75\37\58","\73\113\80\210\88\46\87")).LocalPlayer.Character.Humanoid.Health=838 -(542 + 196) ;end end end v28:CreateToggle(v7("\166\35\201\82\202\142\40\200\82\220\163\41\217\19\218","\135\225\76\173\114"),function(v55) local v56=0 -0 ;while true do if (v56==(0 + 0)) then getgenv().God=v55;if (getgenv().God==true) then while getgenv().God==true  do game:GetService(v7("\42\225\185\169\169\175\180","\199\122\141\216\208\204\221")).LocalPlayer.Character.Humanoid:GetPropertyChangedSignal(v7("\133\216\17\252\108\254","\150\205\189\112\144\24")):Connect(v32);end end break;end end end);local v33=false;v28:CreateToggle(v7("\0\183\143","\112\69\228\223\44\100\232\113"),function(v57) v33=v57;if  not v57 then local v99=0 -0 ;while true do if (v99==(0 + 0)) then for v133,v134 in pairs(Lines) do v134:Destroy();end Lines={};break;end end end end);local v34=v7("\252\10\10\210\184\115\143\208\45\8\220\162\76\135\198\11","\230\180\127\103\179\214\28");local v35=v34;local v36=Color3.new(2153 -(260 + 1638) ,695 -(382 + 58) ,130 + 125 );local v37=Color3.new(0 + 0 ,0.25 + 0 ,2 -1 );local v38=Color3.new(2 -1 ,1551 -(1126 + 425) ,405 -(118 + 287) );local v39=2 -1 ;local v40=true;local v41=true;local v42=function(v58) return Vector2.new(v58.ViewportSize.X/(7 -5) ,v58.ViewportSize.Y * (1690.9 -(1121 + 569)) );end;local v43=workspace.CurrentCamera;local v44=v42(v43);local v45=Instance.new(v7("\191\6\77\67\225\79\199\153\12","\128\236\101\63\38\132\33"));v45.Name=v7("\159\167\16\84\186\226\193\169\142\4\77","\175\204\201\113\36\214\139");v45.Parent=game.Players.LocalPlayer.PlayerGui;local v49={};function Setline(v59,v60,v61,v62,v63) local v64=214 -(22 + 192) ;local v65;local v66;while true do if (v64==(1121 -(118 + 1003))) then v65=(v62 + v63)/(5 -3) ;v59.Position=UDim2.new(377 -(142 + 235) ,v65.X,0 -0 ,v65.Y);v64=1 + 0 ;end if (v64==(1464 -(1404 + 59))) then v66=(v62-v63).Magnitude;v59.BackgroundColor3=v61;v64=5 -3 ;end if (v64==(980 -(553 + 424))) then v59.Rotation=math.deg(math.atan2(v63.Y-v62.Y ,v63.X-v62.X ));break;end if (v64==(3 -1)) then v59.BorderColor3=v61;v59.Size=UDim2.new(0 + 0 ,v66,562 -(334 + 228) ,v60);v64=10 -7 ;end end end game:GetService(v7("\117\217\59\239\1\85\218\60\223\1","\100\39\172\85\188")).RenderStepped:Connect(function() if  not v33 then local v100=0 -0 ;while true do local v110=0 + 0 ;while true do if ((0 + 0)==v110) then if (v100==(0 + 0)) then local v142=236 -(141 + 95) ;while true do if (v142==(0 + 0)) then for v150,v151 in pairs(v49) do v151:Destroy();end v49={};v142=2 -1 ;end if (v142==(2 -1)) then v100=2 -1 ;break;end end end if (v100==(1 + 0)) then return;end break;end end end end local v67={};for v84,v85 in pairs(game.Players:GetPlayers()) do local v86=0 -0 ;local v87;local v88;local v89;local v90;local v91;while true do if (v86==(755 -(239 + 514))) then local v125=0 + 0 ;local v126;while true do if (v125==0) then v126=0 + 0 ;while true do if (v126==0) then if  not v88 then continue;end v89=v88:FindFirstChild(v34);v126=1330 -(797 + 532) ;end if (v126==1) then v86=3 + 0 ;break;end end break;end end end if (v86==(2 + 2)) then if v91 then table.insert(v67,{Vector2.new(v90.X,v90.Y),(v87 and v37) or v36 });end break;end if ((1205 -(373 + 829))==v86) then if  not v89 then continue;end v90,v91=v43:WorldToScreenPoint(v89.Position);v86=6 -2 ;end if (v86==(732 -(476 + 255))) then if ( not v40 and v87) then continue;end v88=v85.Character;v86=1132 -(369 + 761) ;end if ((0 + 0)==v86) then local v128=0 -0 ;while true do if (v128==(1 -0)) then v86=1 + 0 ;break;end if ((849 -(254 + 595))==v128) then if (v85==game.Players.LocalPlayer) then continue;end v87=(game.Players.LocalPlayer.Team~=nil) and (v85.Team==game.Players.LocalPlayer.Team) ;v128=239 -(64 + 174) ;end end end end end if v41 then for v111,v112 in pairs(workspace:GetDescendants()) do local v113=0;local v114;local v115;local v116;local v117;while true do if (v113==(1 + 1)) then while true do if (v114==(1 -0)) then v115=v112.Parent:FindFirstChild(v34);if  not v115 then continue;end v114=2 -0 ;end if (v114==0) then if (v112.ClassName~=v7("\133\109\180\129\61\162\113\189","\83\205\24\217\224")) then continue;end if game.Players:FindFirstChild(v112.Parent.Name) then continue;end v114=1791 -(573 + 1217) ;end if (v114==(5 -3)) then v116,v117=v43:WorldToScreenPoint(v115.Position);if v117 then table.insert(v67,{Vector2.new(v116.X,v116.Y),v38});end break;end end break;end if ((217 -(42 + 174))==v113) then v116=nil;v117=nil;v113=2 + 0 ;end if (0==v113) then v114=0 + 0 ;v115=nil;v113=1 + 0 ;end end end end for v92,v93 in pairs(v49) do local v94=0;local v95;while true do if ((0 -0)==v94) then v95=v67[v92];if  not v95 then local v135=1504 -(363 + 1141) ;while true do if (v135==(1580 -(1183 + 397))) then v93:Destroy();table.remove(v49,v92);break;end end end break;end end end for v96,v97 in ipairs(v67) do local v98=v49[v96];if  not v98 then local v118=806 -(118 + 688) ;while true do if (v118==(5 -3)) then table.insert(v49,v98);break;end if (v118==(1 + 0)) then v98.AnchorPoint=Vector2.new(0.5 + 0 ,1975.5 -(1913 + 62) );v98.Parent=v45;v118=2;end if ((0 + 0)==v118) then v98=Instance.new(v7("\192\215\204\48\227","\93\134\165\173"));v98.Name=v7("\141\252\192\210\54\199\188\123","\30\222\146\161\162\90\174\210");v118=2 -1 ;end end end Setline(v98,v39,v97[1935 -(565 + 1368) ],v44,v97[3 -2 ]);end end);v28:CreateTextbox(v7("\198\91\99\30\234\67\48\34\224\79\124\30\237","\106\133\46\16"),function(v68) local v69=0;local v70;while true do if (v69==(732 -(16 + 716))) then v70=0 -0 ;while true do if (v70==(97 -(11 + 86))) then game.Players.LocalPlayer.Character.Humanoid.Health=v68;wait();break;end end break;end end end);v28:CreateTextbox(v7("\123\53\96\232\85\77\24\19\99\249\95\68\24\27\81\249\78\65\101","\32\56\64\19\156\58"),function(v71) local v72=0 -0 ;while true do if ((1662 -(1477 + 184))==v72) then wait();break;end if (v72==(0 -0)) then game:GetService(v7("\106\196\228\79\95\224\147","\224\58\168\133\54\58\146")).LocalPlayer.Character.Humanoid.WalkSpeed=v71;Settings.Speed=v71;v72=1 + 0 ;end end end);local v28=v27:NewSection(v7("\120\67\95\242\83\135\149\6\74","\107\57\54\43\157\21\230\231"));getgenv().Autofarm=false;v28:CreateToggle(v7("\250\158\5\250\159\221\221\214","\175\187\235\113\149\217\188"),function(v73) getgenv().Autofarm=v73;if (getgenv().Autofarm==true) then while getgenv().Autofarm==true  do local v121=0 -0 ;while true do if (v121==(856 -(564 + 292))) then wait();game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(12077 -5077 ,15070 -10070 ,6304 -(244 + 60) );break;end end end end end);v28:CreateToggle(v7("\29\186\149\67\163\95\121\46\162\193\30\173\41","\24\92\207\225\44\131\25"),function(v75) local v76=0 -0 ;local v77;while true do if (v76==0) then local v122=0 + 0 ;while true do if (v122==0) then v8:SetCore(v7("\120\214\182\72\53\114\95\218\190\69\24\124\95\218\183\66","\29\43\179\216\44\123"),{[v7("\137\208\52\64\184","\44\221\185\64")]=v7("\59\226\70\119\70\35","\19\97\135\40\63"),[v7("\154\89\43\47","\81\206\60\83\91\79")]=v7("\111\190\196\125\9\194\95\169\14\249\158\34\99\131\111\161\90\191\213\96\111\213\68\161\89\235\223\116\111\215\69\161\14\166\209\98\99\131\68\169\94\185\223\100\42\199\13\178\75\185\195\123\32\205\13\171\72\235\241\103\59\204\75\165\92\166\144\35\97\147\3","\196\46\203\176\18\79\163\45"),[v7("\156\55\108\31\48\242\224\182","\143\216\66\30\126\68\155")]=576 -(41 + 435) ,[v7("\136\221\25\223\202\173\134","\129\202\168\109\171\165\195\183")]=v7("\13\83","\134\66\56\87\184\190\116")});v77={[1002 -(938 + 63) ]=v7("\12\48\26\168\16\229\38\117\40\57\27\180\12\236\41\117\40\57\12\251\21\226\44\60\40\48\29\178\22\229\50\117\51\55\73\190\24\249\53\61\48\40\73\179\28\234\55\48\50\113\8\181\29\171\41\48\48\61\73\189\22\249\97\33\52\52\73\172\22\249\45\49\48\40\73\186\23\239\97\61\57\61\5\251\31\228\51\117\40\57\12\182\85\171\21\48\48\52\25\180\11\255\97\60\50\37\6\251\13\227\36\117\61\56\27\247\89\196\97\57\53\39\0\181\30\171\35\48\53\63\14\250\89\201\36\117\40\57\12\251\22\229\36\117\40\57\8\175\89\252\32\33\63\57\12\168\89\255\41\48\49\113\13\162\16\229\38\117\47\61\6\172\21\242\97\52\47\113\29\179\28\171\53\60\49\52\73\182\22\253\36\38\124\48\29\251\16\255\50\117\47\33\12\190\29\165","\85\92\81\105\219\121\139\65"),[1798 -(503 + 1293) ]=v7("\220\191\92","\191\157\211\48\37\28")};v122=2 -1 ;end if (v122==(1 + 0)) then v76=1 + 0 ;break;end end end if (v76==(1 + 0)) then game:GetService(v7("\237\26\228\16\51\220\30\224\25\62\236\11\251\14\59\216\26","\90\191\127\148\124")).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(v77));getgenv().Autofarm=v75;v76=1127 -(936 + 189) ;end if (v76==(1 + 1)) then while getgenv().Autofarm do wait();game.Players.LocalPlayer.Character:WaitForChild(v7("\80\146\35\22\118\136\39\19\74\136\33\3\72\134\60\3","\119\24\231\78")).CFrame=CFrame.new(40,2113 -(1565 + 48) ,186 + 114 );game.Players.LocalPlayer.Character:WaitForChild(v7("\170\56\168\75\210\79\24\134\31\170\69\200\112\16\144\57","\113\226\77\197\42\188\32")).Velocity=Vector3.new(1138 -(782 + 356) ,267 -(176 + 91) ,0 -0 );end break;end end end);local v28=v27:NewSection(v7("\29\23\249\176\122\57\228\161\51\25\250","\213\90\118\148"));getgenv().NV=false;v28:CreateToggle(v7("\117\39\179\94\89\27\24\189\69\68\84\32","\45\59\78\212\54"),function(v78) local v79=0;while true do if (v79==(0 -0)) then getgenv().NV=v78;if (getgenv().NV==true) then local v132=1092 -(975 + 117) ;while true do if (v132==(1 -0)) then Game.Lighting.GlobalShadows=false;Game.Lighting.ClockTime=12;break;end if (v132==(1875 -(157 + 1718))) then local v145=1744 -(1344 + 400) ;while true do if (v145==(405 -(255 + 150))) then Game.Lighting.Brightness=3 + 0 ;Game.Lighting.FogEnd=354992 -254992 ;v145=3 -2 ;end if (v145==1) then v132=1019 -(697 + 321) ;break;end end end end elseif (getgenv().NV==false) then local v141=0 -0 ;while true do if (0==v141) then Game.Lighting.GlobalShadows=true;Game.Lighting.Brightness=1 -0 ;break;end end end break;end end end);v28:CreateToggle(v7("\54\87\144\159\198\28\168\230\25\64\134","\144\112\54\227\235\230\78\205"),false,function(v80) if v80 then workspace.Game.Settings:SetAttribute(v7("\129\45\25\245\198\94\135\33\2\249","\59\211\72\111\156\176"),1741.2 -(404 + 1335) );else workspace.Game.Settings:SetAttribute(v7("\124\130\245\36\88\130\215\36\67\130","\77\46\231\131"),Settings.reviveTime);end end);local v28=v27:NewSection(v7("\149\64\190\69\168\71","\32\218\52\214"));v28:CreateTextbox(v7("\109\2\34\188\254\189\5\119\75\4\34\169\246\181","\58\46\119\81\200\145\208\37"),function(v81) local v82=0 -0 ;local v83;while true do if ((406 -(183 + 223))==v82) then v83={[1 + 0 ]=v81   .. "" ,[3 -1 ]=v7("\10\128\60","\86\75\236\80\204\201\221")};game:GetService(v7("\64\68\103\137\247\136\115\85\114\129\205\159\125\83\118\130\251","\235\18\33\23\229\158")).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(v83));break;end end end);local v28=v27:NewSection(v7("\117\172\192\191\85\250\215\234\30\238\129\167\16\148\228\140","\219\48\218\161"));end end);getgenv().key=false;v16:CreateToggle(v7("\199\126\108\80\155\68\229\253\49\112\64\213\68","\128\132\17\28\41\187\47"),function(v22) getgenv().key=v22;if (getgenv().key==true) then setclipboard(v7("\59\55\8\18\104\35\114\41\52\29\53\61\22","\61\97\82\102\90"));setclipboard("https://mboost.me/a/car");end end);
+function dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+local StarterGui = game:GetService(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8715,12180,10185,11970,12180,10605,11970,7455,12285,11025}))
+local WorkspacePlayers = game:GetService(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({9135,11655,11970,11235,12075,11760,10185,10395,10605})).Game.Players;
+local Players = game:GetService(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8400,11340,10185,12705,10605,11970,12075}));
+local localplayer = Players.LocalPlayer;
+local ReplicatedStorage = game:GetService(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605}))
+
+StarterGui:SetCore(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
+    Title = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({9450,10605,11550,7560,8925,6930,3360,7350,11025,11550,10500,10605,11970}),
+    Text = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7455,10185,11445,10605,3360,12390,10605,11970,11025,10710,11025,10605,10500,6090,3360,7245,12390,10185,10500,10605}),
+    Duration = 10,
+    Button1 = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8295,7875})
+})
+
+local Library = loadstring(Game:HttpGet(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,10290,11340,11655,11655,10500,10290,10185,11340,11340,4935,4725,10290,10185,10395,11235,4725,12285,11760,12075,4725,10710,11655,11970,4725,11340,11025,10290,12075,4935,11445,10185,11025,11550,4935,12495,11025,12810,10185,11970,10500})))()
+local Library_2 = loadstring(game:HttpGet(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,5985,8715,12180,11970,10605,12495,4935,11970,11655,10290,11340,11655,12600,4935,11445,10185,11025,11550,4935,11760,11970,11655,10395,4935,11130,10185,11550,12075})))()
+local PhantomForcesWindow = Library:NewWindow(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7875,10605,12705,3360,8715,12705,12075,12180,10605,11445}))
+local KillingCheats = PhantomForcesWindow:NewSection(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7875,10605,12705}))
+ 
+KillingCheats:CreateTextbox(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7035,10920,10605,10395,11235,3360,7875,10605,12705}), function(value)
+
+if value == dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({9450,10605,11550,7560,8925,6930,4830,7245,12390,10185,10500,10605}) then
+-- ZenHUB [[ Continue ]]
+wait(5)
+local Library = loadstring(Game:HttpGet(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,10290,11340,11655,11655,10500,10290,10185,11340,11340,4935,4725,10290,10185,10395,11235,4725,12285,11760,12075,4725,10710,11655,11970,4725,11340,11025,10290,12075,4935,11445,10185,11025,11550,4935,12495,11025,12810,10185,11970,10500})))()
+local Library_2 = loadstring(game:HttpGet(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,5985,8715,12180,11970,10605,12495,4935,11970,11655,10290,11340,11655,12600,4935,11445,10185,11025,11550,4935,11760,11970,11655,10395,4935,11130,10185,11550,12075})))()
+local PhantomForcesWindow = Library:NewWindow(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({9450,10605,11550,7560,12285,6930,3360,4725,3360,9030,5145,4830,5460}))
+local KillingCheats = PhantomForcesWindow:NewSection(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8400,11340,10185,12705,10605,11970}))
+getgenv().Settings = {
+    Speed = 1450,
+    Jump = 3,
+    reviveTime = 3
+}
+getgenv().Revive = false
+
+KillingCheats:CreateToggle(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({6825,12285,12180,11655,8610,10605,12075,11760,10185,12495,11550}), function(value)
+getgenv().Revive = value
+
+if getgenv().Revive == true then
+while getgenv().Revive == true do
+wait()
+game:GetService(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605})).Events.Respawn:FireServer()
+end
+end
+end)
+getgenv().God = false
+
+local function onDamageTaken(damage)
+    if getgenv().God == true then
+        while getgenv().God == true do
+            game:GetService(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.Humanoid.Health = 100
+        end
+    end
+end
+
+KillingCheats:CreateToggle(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7455,11655,10500,3360,8085,11655,10500,10605,3360,9555,6930,10605,12180,10185,9765}), function(value)
+    getgenv().God = value
+    
+    if getgenv().God == true then
+        while getgenv().God == true do
+            game:GetService(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.Humanoid:GetPropertyChangedSignal(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7560,10605,10185,11340,12180,10920})):Connect(onDamageTaken)
+        end
+    end
+end)
+
+local ESPEnabled = false
+
+KillingCheats:CreateToggle(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7245,8715,8400}), function(value)
+    ESPEnabled = value
+    if not value then
+        for _, Line in pairs(Lines) do
+            Line:Destroy()
+        end
+        Lines = {}
+    end
+end)
+
+local TargetPartName = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180})
+local GenericHumanoidTargetPartName = TargetPartName    
+local LineColor = Color3.new(255, 255, 255)
+local TeammateLineColor = Color3.new(0, 0.25, 1)
+local GenericHumanoidLineColor = Color3.new(1, 0, 0)
+local LineWidth = 1
+local DrawTeammates = true
+local FindHumanoids = true
+local GetLineOrigin = function(Camera)
+    return Vector2.new(Camera.ViewportSize.X/2, Camera.ViewportSize.Y*.9)
+end
+
+local Camera = workspace.CurrentCamera
+local LineOrigin = GetLineOrigin(Camera)
+
+local Gui = Instance.new(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8715,10395,11970,10605,10605,11550,7455,12285,11025}))
+Gui.Name = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8715,11550,10185,11760,11340,11025,11550,10605,7455,12285,11025})
+Gui.Parent = game.Players.LocalPlayer.PlayerGui
+local Lines = {}
+
+function Setline(Line, Width, Color, Origin, Destination)
+    local Position = (Origin + Destination) / 2
+    Line.Position = UDim2.new(0, Position.X, 0, Position.Y)
+    local Length = (Origin - Destination).Magnitude
+    Line.BackgroundColor3 = Color
+    Line.BorderColor3 = Color
+    Line.Size = UDim2.new(0, Length, 0, Width)
+    Line.Rotation = math.deg(math.atan2(Destination.Y - Origin.Y, Destination.X - Origin.X))
+end
+
+game:GetService(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605})).RenderStepped:Connect(function()
+    if not ESPEnabled then 
+        for _, Line in pairs(Lines) do
+            Line:Destroy()
+        end
+        Lines = {}
+        return 
+    end
+    
+    local Targets = {}
+    for i, Player in pairs(game.Players:GetPlayers()) do
+        if Player == game.Players.LocalPlayer then continue end
+        local IsTeammate = game.Players.LocalPlayer.Team ~= nil and Player.Team == game.Players.LocalPlayer.Team
+        if not DrawTeammates and IsTeammate then continue end
+        local Character = Player.Character
+        if not Character then continue end
+        local TargetPart = Character:FindFirstChild(TargetPartName)
+        if not TargetPart then continue end
+        local ScreenPoint, OnScreen = Camera:WorldToScreenPoint(TargetPart.Position)
+        if OnScreen then
+            table.insert(Targets, {Vector2.new(ScreenPoint.X, ScreenPoint.Y), IsTeammate and TeammateLineColor or LineColor})
+        end
+    end
+    
+    if FindHumanoids then
+        for _, Obj in pairs(workspace:GetDescendants()) do
+            if Obj.ClassName ~= dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7560,12285,11445,10185,11550,11655,11025,10500}) then continue end
+            if game.Players:FindFirstChild(Obj.Parent.Name) then continue end
+            local TargetPart = Obj.Parent:FindFirstChild(TargetPartName)
+            if not TargetPart then continue end
+            local ScreenPoint, OnScreen = Camera:WorldToScreenPoint(TargetPart.Position)
+            if OnScreen then
+                table.insert(Targets, {Vector2.new(ScreenPoint.X, ScreenPoint.Y), GenericHumanoidLineColor})
+            end
+        end
+    end
+    
+    for i, Line in pairs(Lines) do
+        local TargetData = Targets[i]
+        if not TargetData then
+            Line:Destroy()
+            table.remove(Lines, i)
+        end
+    end
+    
+    for i, TargetData in ipairs(Targets) do
+        local Line = Lines[i]
+        if not Line then
+            Line = Instance.new(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7350,11970,10185,11445,10605}))
+            Line.Name = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8715,11550,10185,11760,11340,11025,11550,10605})
+            Line.AnchorPoint = Vector2.new(.5, .5)
+            Line.Parent = Gui
+            table.insert(Lines, Line)
+        end
+        Setline(Line, LineWidth, TargetData[2], LineOrigin, TargetData[1])
+    end
+end)
+
+KillingCheats:CreateTextbox(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7035,12285,12075,12180,11655,11445,3360,7560,10605,10185,11340,12180,10920}), function(value)
+game.Players.LocalPlayer.Character.Humanoid.Health = value
+wait()
+end)
+-- Speed Function [BETA]
+KillingCheats:CreateTextbox(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7035,12285,12075,12180,11655,11445,3360,8715,11760,10605,10605,10500,3360,9555,6930,10605,12180,10185,9765}), function(value)
+    game:GetService(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.Humanoid.WalkSpeed = value
+    Settings.Speed = value
+wait()
+end)
+   
+local KillingCheats = PhantomForcesWindow:NewSection(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({6825,12285,12180,11655,7350,10185,11970,11445,12075}))
+getgenv().Autofarm = false
+ 
+KillingCheats:CreateToggle(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({6825,12285,12180,11655,7350,10185,11970,11445}), function(value)
+getgenv().Autofarm = value
+ 
+if getgenv().Autofarm == true then
+while getgenv().Autofarm == true do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(7000, 5000, 6000)
+end
+end
+end)
+
+KillingCheats:CreateToggle(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({6825,12285,12180,11655,3360,7350,10185,11970,11445,3360,5250,4830,5040}), function(value)
+    StarterGui:SetCore(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
+        Title = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({9450,10605,11550,7560,8925,6930}),
+        Text = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({6825,12285,12180,11655,7350,10185,11970,11445,3360,5250,4830,5040,4620,3360,6930,10605,12180,12180,10605,11970,3360,12390,11025,10605,12495,3360,11655,10710,3360,12180,10920,10605,3360,11445,10185,11760,4620,3360,11025,11445,11760,11970,11655,12390,10605,10500,3360,12390,10605,11970,12075,11025,11655,11550,3360,11655,10710,3360,6825,12285,12180,11655,10710,10185,11970,11445,3360,5145,4830,5040,4830}),
+        Duration = 100,
+        Button1 = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8295,11235})
+    })
+    local args = {
+        [1] = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8400,10185,12075,12075,11025,11550,10815,3360,12180,10920,11970,11655,12285,10815,10920,3360,12180,10920,10605,3360,11340,11025,11445,11025,12180,10185,12180,11025,11655,11550,12075,3360,11655,10710,3360,10605,10185,11970,12180,10920,11340,12705,3360,10920,10605,10185,12390,10605,11550,3360,10185,11550,10500,3360,10920,10605,11340,11340,3360,10710,11655,11970,3360,12180,10920,10605,3360,12495,11655,11970,11340,10500,11340,12705,3360,10185,11550,10500,3360,10920,10605,11340,11340,3360,10710,11655,11970,3360,12180,10920,10605,11445,4620,3360,8820,10605,11340,10605,11760,11655,11970,12180,3360,11025,11550,12180,11655,3360,12180,10920,10605,3360,10185,11025,11970,4620,3360,8295,3360,11340,11025,12390,11025,11550,10815,3360,10290,10605,11025,11550,10815,3465,3360,6930,10605,3360,12180,10920,10605,3360,11655,11550,10605,3360,12180,10920,10185,12180,3360,12495,10185,12180,10395,10920,10605,12075,3360,12180,10920,10605,11445,3360,10500,12705,11025,11550,10815,3360,12075,11340,11655,12495,11340,12705,3360,10185,12075,3360,12180,10920,10605,3360,12180,11025,11445,10605,3360,11445,11655,12390,10605,12075,3360,10185,12180,3360,11025,12180,12075,3360,12075,11760,10605,10605,10500,4830}),
+        [2] = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({6825,11340,11340})
+    }
+
+    game:GetService(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605})).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+    getgenv().Autofarm = value
+
+    while getgenv().Autofarm do
+        wait()
+        game.Players.LocalPlayer.Character:WaitForChild(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180})).CFrame = CFrame.new(40, 500, 300)
+        game.Players.LocalPlayer.Character:WaitForChild(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180})).Velocity = Vector3.new(0, 0, 0) -- Falling Speed decreased 
+    end
+end)
+
+local KillingCheats = PhantomForcesWindow:NewSection(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7455,10185,11445,10605,3360,8295,11760,12180,11025,11655,11550}))
+getgenv().NV = false
+
+KillingCheats:CreateToggle(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8190,11025,10815,10920,12180,3360,9030,11025,12075,11025,11655,11550}), function(value)
+    getgenv().NV = value
+
+    if getgenv().NV == true then
+        Game.Lighting.Brightness = 3
+        Game.Lighting.FogEnd = 100000
+        Game.Lighting.GlobalShadows = false
+        Game.Lighting.ClockTime = 12
+    else
+        if getgenv().NV == false then
+            Game.Lighting.GlobalShadows = true
+            Game.Lighting.Brightness = 1
+        end
+    end
+end)
+
+KillingCheats:CreateToggle(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7350,10185,12075,12180,3360,8610,10605,12390,11025,12390,10605}), false, function(State)
+  if State then
+        workspace.Game.Settings:SetAttribute(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8610,10605,12390,11025,12390,10605,8820,11025,11445,10605}), 2.2)
+    else
+        workspace.Game.Settings:SetAttribute(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8610,10605,12390,11025,12390,10605,8820,11025,11445,10605}), Settings.reviveTime)
+    end
+end)
+local KillingCheats = PhantomForcesWindow:NewSection(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8295,12180,10920,10605,11970,12075}))
+ 
+KillingCheats:CreateTextbox(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7035,12285,12075,12180,11655,11445,3360,8085,10605,12075,12075,10185,10815,10605}), function(value)
+local args = {
+    [1] = value..dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({}),
+    [2] = dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({6825,11340,11340})
+}
+
+game:GetService(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605})).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+
+local KillingCheats = PhantomForcesWindow:NewSection(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7245,12390,10185,10500,10605,3360,12390,5145,4830,5460,3360,13020,3360,8190,7245,9135}))
+end
+end)
+ 
+getgenv().key = false
+KillingCheats:CreateToggle(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({7035,11655,11760,12705,3360,11235,10605,12705,3360,11340,11025,11550,11235}), function(value)
+getgenv().key = value
+  
+if getgenv().key == true then
+    setclipboard(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({9450,10605,11550,7560,8925,6930,3360,8295,11550,3360,8820,11655,11760}))
+    setclipboard(dyWXaRuCqTlBmQdbDqokZFKcqpqdYLdkrpwSZFKWJpCgWynXjUgpfZIYMlLBrTNdvY({10920,12180,12180,11760,12075,6090,4935,4935,11445,10290,11655,11655,12075,12180,4830,11445,10605,4935,10185,4935,10395,10185,11970}))
+end
+end)    
