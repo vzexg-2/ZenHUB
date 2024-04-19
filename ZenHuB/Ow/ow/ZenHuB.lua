@@ -23,8 +23,7 @@ local KillingCheats = PhantomForcesWindow:NewSection("Key")
  
 KillingCheats:CreateTextbox("Check Key", function(value)
 if value == "ZenHUB.Evade" then
--- ZenHUB [[ Continue ]]
-wait(5)
+wait(2)
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local Library_2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/proc/jans"))()
 local PhantomForcesWindow = Library:NewWindow("ZenHUB - V1.4")
