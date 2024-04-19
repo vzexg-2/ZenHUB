@@ -3,7 +3,8 @@
  |_  /___ _ _ / __| ___ __  \ \ / /__ /
   / // -_) ' \\__ \/ -_) _|  \ V / |_ \
  /___\___|_||_|___/\___\__|   \_/ |___/
-    ! Secured By ZenSec ( Alpha v0.3.2 )
+    ! Secured By ZenSec ( Alpha v3.0 )
+     * Normal Method *
 
 ]]
 
