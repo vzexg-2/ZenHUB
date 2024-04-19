@@ -6,7 +6,7 @@
  /___\___|_||_|___/\___\__|   \_/ |___/
 
 
-This script has been obfuscated by ZenSec v3
+// Secured by ZenSec v3
 
 ]]
 
