@@ -1,1 +1,3 @@
+ZenHuB is a simple Script hub, minimized ui and also less useless feature!
 
+Thats it, this is for an example txt to create the directory of ZenHuB/Ow/ow
