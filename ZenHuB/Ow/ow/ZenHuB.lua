@@ -6,7 +6,7 @@
  / /| /  __/ /_/ /___/ /  __/ /__  
 /_/ |_\___/\__, //____/\___/\___/  
           /____/                   
-         / Key system was secured by KeySec.
+         / # Key system was secured by KeySec ( Alpha v0.1.1 )
 ]]
 
 
