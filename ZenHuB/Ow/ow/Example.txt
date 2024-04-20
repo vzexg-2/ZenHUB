@@ -1,3 +1,5 @@
 ZenHuB is a simple Script hub, minimized ui and also less useless feature!
 
+KeySec is a obfuscating tool to keep a key (value) safe from being edited by someone because it only for the key and the others is visible by the person.
+
 Thats it, this is for an example txt to create the directory of ZenHuB/Ow/ow
