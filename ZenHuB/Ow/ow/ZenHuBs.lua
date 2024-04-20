@@ -23,10 +23,10 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 -- If the script is executed in other game, it will not work.
 StarterGui:SetCore("SendNotification", {
-    Title = "ZenHUB Finder",
-    Text = "Verified: Evade",
+    Title = "Loader",
+    Text = "Library loaded.",
     Duration = 10,
-    Button1 = "OK"
+    Button1 = "Ok"
 })
 
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
@@ -36,7 +36,13 @@ local KillingCheats = PhantomForcesWindow:NewSection("Key")
  
 KillingCheats:CreateTextbox("Check Key", function(value)
 if value == rIWCeLwtocFRCSAxnppdaQkHSiGRMHDQXUerwuFHjRnaUQVxAPnbMPHF('dDhERFtZwMVjSyjUnscFQqqpJKyJitApnEWGxjIXSsqIfFbedSHGzfruECXrWmVuSFVCLkV2YWRl') then
-wait(2)
+StarterGui:SetCore("SendNotification", {
+    Title = "Key System",
+    Text = "Verifying & Matching key (value) with gsub, please wait.",
+    Duration = 10,
+    Button1 = "Ok"
+})
+wait(10)
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local Library_2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/proc/jans"))()
 local PhantomForcesWindow = Library:NewWindow("ZenHUB - V1.4")
@@ -62,9 +68,7 @@ getgenv().God = false
 
 local function onDamageTaken(damage)
     if getgenv().God == true then
-        while getgenv().God == true do
-            game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 100
-        end
+        game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 100
     end
 end
 
@@ -72,7 +76,7 @@ KillingCheats:CreateToggle("God Mode [Beta]", function(value)
     getgenv().God = value
     
     if getgenv().God == true then
-        while getgenv().God == true do
+        while getgenv().God do
             game:GetService("Players").LocalPlayer.Character.Humanoid:GetPropertyChangedSignal("Health"):Connect(onDamageTaken)
         end
     end
