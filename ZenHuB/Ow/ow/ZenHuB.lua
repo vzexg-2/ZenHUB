@@ -1,6 +1,15 @@
 --[[
-If you edit this file just to search the key, i already obfuscated it LOL!
+
+    __ __           _____          
+   / //_/__  __  __/ ___/___  _____
+  / ,< / _ \/ / / /\__ \/ _ \/ ___/
+ / /| /  __/ /_/ /___/ /  __/ /__  
+/_/ |_\___/\__, //____/\___/\___/  
+          /____/                   
+         / Key system was secured by KeySec.
 ]]
+
+
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 function rIWCeLwtocFRCSAxnppdaQkHSiGRMHDQXUerwuFHjRnaUQVxAPnbMPHF(data) m=string.sub(data, 0, 60) data=data:gsub(m,'')
 
