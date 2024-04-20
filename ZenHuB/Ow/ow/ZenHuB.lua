@@ -1,7 +1,11 @@
 --[[
-Obfuscating the script will make God Mode and ESP Not working 
-I don't wanna pay and waste my money just to obfuscate the script, lol
+If you edit this file just to search the key, i already obfuscated it LOL!
 ]]
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function rIWCeLwtocFRCSAxnppdaQkHSiGRMHDQXUerwuFHjRnaUQVxAPnbMPHF(data) m=string.sub(data, 0, 60) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
 local StarterGui = game:GetService("StarterGui")
 local WorkspacePlayers = game:GetService("Workspace").Game.Players;
 local Players = game:GetService('Players');
@@ -22,7 +26,7 @@ local PhantomForcesWindow = Library:NewWindow("Key System")
 local KillingCheats = PhantomForcesWindow:NewSection("Key")
  
 KillingCheats:CreateTextbox("Check Key", function(value)
-if value == "ZenHUB.Evade" then
+if value == rIWCeLwtocFRCSAxnppdaQkHSiGRMHDQXUerwuFHjRnaUQVxAPnbMPHF('dDhERFtZwMVjSyjUnscFQqqpJKyJitApnEWGxjIXSsqIfFbedSHGzfruECXrWmVuSFVCLkV2YWRl') then
 wait(2)
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local Library_2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/proc/jans"))()
