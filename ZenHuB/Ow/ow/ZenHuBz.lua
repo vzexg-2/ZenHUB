@@ -6,9 +6,9 @@
  / /| /  __/ /_/ /___/ /  __/ /__  
 /_/ |_\___/\__, //____/\___/\___/  
           /____/                   
-         / # Key system was secured by KeySec ( Alpha v0.1.1 )
-]]
+         / # Key has been secured by KeySec ( Alpha v0.1.1 )
 
+]]
 
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 function rIWCeLwtocFRCSAxnppdaQkHSiGRMHDQXUerwuFHjRnaUQVxAPnbMPHF(data) m=string.sub(data, 0, 60) data=data:gsub(m,'')
@@ -39,10 +39,16 @@ if value == rIWCeLwtocFRCSAxnppdaQkHSiGRMHDQXUerwuFHjRnaUQVxAPnbMPHF('dDhERFtZwM
 StarterGui:SetCore("SendNotification", {
     Title = "Key System",
     Text = "Verifying & Matching key (value) with gsub, please wait.",
-    Duration = 10,
+    Duration = 5,
     Button1 = "Ok"
 })
 wait(10)
+StarterGui:SetCore("SendNotification", {
+    Title = "Key System",
+    Text = "Key (value) matched the converted string, You have been verified.",
+    Duration = 8,
+    Button1 = "Ok"
+})
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local Library_2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/proc/jans"))()
 local PhantomForcesWindow = Library:NewWindow("ZenHUB - V1.4")
@@ -77,6 +83,7 @@ KillingCheats:CreateToggle("God Mode [Beta]", function(value)
     
     if getgenv().God == true then
         while getgenv().God do
+            wait()
             game:GetService("Players").LocalPlayer.Character.Humanoid:GetPropertyChangedSignal("Health"):Connect(onDamageTaken)
         end
     end
