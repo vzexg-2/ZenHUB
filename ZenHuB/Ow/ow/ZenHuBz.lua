@@ -72,22 +72,32 @@ end
 end)
 getgenv().God = false
 
-local function onDamageTaken(damage)
-    if getgenv().God == true then
-        game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 100
+local function onDamageTaken()
+    if getgenv().God then
+        local player = game:GetService("Players").LocalPlayer
+        local humanoid = player.Character and player.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid and humanoid.Health < 100 then
+            humanoid.Health = 100
+        end
     end
 end
 
 KillingCheats:CreateToggle("God Mode [Beta]", function(value)
     getgenv().God = value
-    
-    if getgenv().God == true then
+
+    if getgenv().God then
+        local player = game:GetService("Players").LocalPlayer
+        local humanoid = player.Character and player.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid:GetPropertyChangedSignal("Health"):Connect(onDamageTaken)
+        end
         while getgenv().God do
-            wait()
-            game:GetService("Players").LocalPlayer.Character.Humanoid:GetPropertyChangedSignal("Health"):Connect(onDamageTaken)
+            wait(0.1)
+            onDamageTaken()
         end
     end
 end)
+
 
 local ESPEnabled = false
 
