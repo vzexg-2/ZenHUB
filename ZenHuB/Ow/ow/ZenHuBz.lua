@@ -6,7 +6,7 @@
  / /| /  __/ /_/ /___/ /  __/ /__  
 /_/ |_\___/\__, //____/\___/\___/  
           /____/                   
-         / # Key has been secured by KeySec ( Alpha v0.1.1 )
+         / # Key has been secured by KeySec ( Alpha v1)
 
 ]]
 
@@ -36,13 +36,13 @@ local KillingCheats = PhantomForcesWindow:NewSection("Key")
  
 KillingCheats:CreateTextbox("Check Key", function(value)
 if value == rIWCeLwtocFRCSAxnppdaQkHSiGRMHDQXUerwuFHjRnaUQVxAPnbMPHF('dDhERFtZwMVjSyjUnscFQqqpJKyJitApnEWGxjIXSsqIfFbedSHGzfruECXrWmVuSFVCLkV2YWRl') then
-wait(3)
 StarterGui:SetCore("SendNotification", {
-    Title = "Key System",
-    Text = "Key (value) matched the converted string, Hope you enjoy it!",
+    Title = "KeySec v1",
+    Text = "Loading Library, please wait.",
     Duration = 8,
     Button1 = "Ok"
 })
+wait(3)
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local Library_2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/proc/jans"))()
 local PhantomForcesWindow = Library:NewWindow("ZenHUB - V1.4")
