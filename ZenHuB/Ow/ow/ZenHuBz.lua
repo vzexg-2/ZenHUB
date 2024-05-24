@@ -24,7 +24,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 -- If the script is executed in other game, it will not work.
 StarterGui:SetCore("SendNotification", {
     Title = "Loader",
-    Text = "Library loaded.",
+    Text = "ZenHUB v1.4 on top!",
     Duration = 10,
     Button1 = "Ok"
 })
@@ -36,16 +36,10 @@ local KillingCheats = PhantomForcesWindow:NewSection("Key")
  
 KillingCheats:CreateTextbox("Check Key", function(value)
 if value == rIWCeLwtocFRCSAxnppdaQkHSiGRMHDQXUerwuFHjRnaUQVxAPnbMPHF('dDhERFtZwMVjSyjUnscFQqqpJKyJitApnEWGxjIXSsqIfFbedSHGzfruECXrWmVuSFVCLkV2YWRl') then
+wait(3)
 StarterGui:SetCore("SendNotification", {
     Title = "Key System",
-    Text = "Verifying & Matching key (value) with gsub, please wait.",
-    Duration = 5,
-    Button1 = "Ok"
-})
-wait(10)
-StarterGui:SetCore("SendNotification", {
-    Title = "Key System",
-    Text = "Key (value) matched the converted string, You have been verified.",
+    Text = "Key (value) matched the converted string, Hope you enjoy it!",
     Duration = 8,
     Button1 = "Ok"
 })
