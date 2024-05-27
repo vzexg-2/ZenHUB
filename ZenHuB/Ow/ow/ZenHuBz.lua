@@ -26,7 +26,7 @@ StarterGui:SetCore("SendNotification", {
     Title = "Loader",
     Text = "ZenHUB v1.4 on top!",
     Duration = 10,
-    Button1 = "Ok"
+    Button1 = "Fr"
 })
 
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
@@ -39,8 +39,7 @@ if value == rIWCeLwtocFRCSAxnppdaQkHSiGRMHDQXUerwuFHjRnaUQVxAPnbMPHF('dDhERFtZwM
 StarterGui:SetCore("SendNotification", {
     Title = "KeySec v1",
     Text = "Loading Library, please wait.",
-    Duration = 8,
-    Button1 = "Ok"
+    Duration = 8
 })
 wait(3)
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
